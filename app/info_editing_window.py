@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QDialog
 from templates.InfoWindow import Ui_InfoWindow
 import json
 
+
 class InfoEditingWindow(QDialog, Ui_InfoWindow):
     def __init__(self):
         super().__init__()
@@ -14,7 +15,7 @@ class InfoEditingWindow(QDialog, Ui_InfoWindow):
         self.close()
 
     def create_lession(self):
-        with open("classes.json", 'r', encoding='utf-8') as f:
+        with open("data/classes.json", 'r', encoding='utf-8') as f:
             data = json.load(f)
         lession = self.lineEdit_name.text()
         lessionInfo = {}
@@ -26,9 +27,10 @@ class InfoEditingWindow(QDialog, Ui_InfoWindow):
         lessionInfo["practica"] = (lessionInfo["lecture"] + 1) % 2
         lessionInfo["dopsa"] = float(self.doubleSpinBox_dopsa.value())
         data[lession] = lessionInfo
-        with open("classes.json", 'w', encoding='utf-8') as f:
+        with open("data/classes.json", 'w', encoding='utf-8') as f:
             json.dump(data, f,
-                      sort_keys = False,
-                      indent = 4,
-                      ensure_ascii = False,
-                      separators = (',', ': '))
+                      sort_keys=False,
+                      indent=4,
+                      ensure_ascii=False,
+                      separators=(',', ': ')
+                      )

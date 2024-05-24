@@ -21,7 +21,7 @@ class Ui_SmartTimeTable(object):
         self.button_open_tables = QtWidgets.QPushButton(self.centralwidget)
         self.button_open_tables.setGeometry(QtCore.QRect(10, 10, 421, 34))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:/Users/user/PycharmProjects/schedule_optimizer/img/timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         SmartTimeTable.setWindowIcon(icon)
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(108, 166, 205))

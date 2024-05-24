@@ -23,7 +23,7 @@ class Ui_Form(object):
         Form.setMinimumSize(QtCore.QSize(0, 0))
         Form.setBaseSize(QtCore.QSize(0, 0))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:/Users/user/PycharmProjects/schedule_optimizer/img/timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Form.setWindowIcon(icon)
         self.tableWidget = QtWidgets.QTableWidget(Form)
         self.tableWidget.setGeometry(QtCore.QRect(0, 0, 1061, 311))

@@ -16,7 +16,7 @@ class Ui_InfoWindow(object):
         InfoWindow.setObjectName("InfoWindow")
         InfoWindow.resize(352, 407)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("C:/Users/user/PycharmProjects/schedule_optimizer/img/timetable_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         InfoWindow.setWindowIcon(icon)
         InfoWindow.setStyleSheet("background-color: rgb(74, 112, 139);")
         self.pushButton_back = QtWidgets.QPushButton(InfoWindow)
